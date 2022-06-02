@@ -38,7 +38,7 @@ export const List = styled.div`
 
 export const Link = styled.a`
     position: relative;
-    margin-right: 30px;
+    margin-right: 32px;
     text-decoration: none;
     font-size: 1.7rem;
     font-weight: 400;
@@ -53,9 +53,9 @@ export const Link = styled.a`
         content: "";
         background-color: #FFD700;
         position: absolute;
-        top: 33px;
+        top: 35px;
         right: 0px;
-        height: 3px;
+        height: 2px;
         width: 100%;
         transform: scaleX(0);
         transform-origin: right;
