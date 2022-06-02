@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 
 
-export const Header = styled.header `
+export const Header = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,25 +18,25 @@ export const Header = styled.header `
 `
 
 
-export const H1 = styled.h1 `
+export const H1 = styled.h1`
     text-decoration: none;
-    font-size: 2.5rem;
-    font-family: "IBM Plex Sans", sans-serif;
-    color: #FAFAFA;
+
     outline: none;
 
     a {
-        color: #fff;
+        font-family: "IBM Plex Sans", sans-serif;
+        color: #FAFAFA;
+        font-size: 2.5rem;
     }
 `
 
 
-export const List = styled.div `
-
+export const List = styled.div`
+    display: block;
 `
 
 
-export const Link = styled.a `
+export const Link = styled.a`
     position: relative;
     margin-right: 30px;
     text-decoration: none;
@@ -44,6 +44,10 @@ export const Link = styled.a `
     font-weight: 400;
     color: #cccccc;
     outline: none;
+
+    :hover {
+        color: #fff;
+    }
 
     ::after  {
         content: "";
