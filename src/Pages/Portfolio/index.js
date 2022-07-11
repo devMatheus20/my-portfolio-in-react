@@ -144,288 +144,291 @@ function Portfolio() {
         </S.Menu>
       </S.Header>
 
+      <main>
 
-      <S.Home id='home'>
-        <S.ArticleHome>
-          <S.SpanHome className='d-200'>Olá, meu nome é</S.SpanHome>
+        <S.Home id='home'>
+          <S.ArticleHome>
+            <S.SpanHome className='d-200'>Olá, meu nome é</S.SpanHome>
 
-          <S.H1Home className='d-300'><span>Ma</span>theus <span>Sant</span>os</S.H1Home>
+            <S.H1Home className='d-300'><span>Ma</span>theus <span>Sant</span>os</S.H1Home>
 
-          <S.ParagraphHome>
-            <ReactTypical className='d-300' steps={[1400, 'I build things for the web.']} wrapper="p" />
-          </S.ParagraphHome>
+            <S.ParagraphHome>
+              <ReactTypical className='d-300' steps={[1400, 'I build things for the web.']} wrapper="p" />
+            </S.ParagraphHome>
 
-          <S.ButtonsHome className='d-400'>
+            <S.ButtonsHome className='d-400'>
 
-            <a className='contact' href='#contact'>Entrar em contato</a>
+              <a className='contact' href='#contact'>Entrar em contato</a>
 
-            <a className='cv-download' href={require("../../Assets/currículo-matheus.pdf")} download>CV Download</a>
-          </S.ButtonsHome>
-        </S.ArticleHome>
+              <a className='cv-download' href={require("../../Assets/currículo-matheus.pdf")} download>CV Download</a>
+            </S.ButtonsHome>
+          </S.ArticleHome>
 
-        <S.ImageHome src={ImageHome} alt="Imagem Ilustrativa" />
-      </S.Home>
+          <S.ImageHome src={ImageHome} alt="Imagem Ilustrativa" />
+        </S.Home>
 
 
-      <S.About id='about'>
-        <S.ImageAbout className="d-200" src={require('../../Assets/perfil.png')} alt='Imagem Do Meu Perfil Do GitHub' />
+        <S.About id='about'>
+          <S.ImageAbout className="d-200" src={require('../../Assets/perfil.png')} alt='Imagem Do Meu Perfil Do GitHub' />
 
-        <S.ArticleAbout>
+          <S.ArticleAbout>
 
-          <S.TitleAbout className='d-300'>
-            Quem sou
+            <S.TitleAbout className='d-300'>
+              Quem sou
+              <Point />
+            </S.TitleAbout>
+
+            <S.ParagraphAbout className='d-300'>
+              Sou Matheus Santos Souza, tenho 20 anos, sou desenvolvedor
+              focado no front-end e venho constantemente aprimorando meus conhecimentos em
+              <span> HTML, CSS, JavaScript e ReactJS</span>.
+              Estou cursando Análise e Desenvolvimento de
+              Sistemas na Faculdade Estácio, atualmente no terceiro semestre e sócio do DevClub.
+            </S.ParagraphAbout>
+
+          </S.ArticleAbout>
+        </S.About>
+
+
+        <S.Projects id='projects'>
+
+          <S.TitleProjects className='d-200'>
+            Projetos
             <Point />
-          </S.TitleAbout>
+          </S.TitleProjects>
 
-          <S.ParagraphAbout className='d-300'>
-            Sou Matheus Santos Souza, tenho 20 anos, sou desenvolvedor
-            focado no front-end e venho constantemente aprimorando meus conhecimentos em
-            <span> HTML, CSS, JavaScript e ReactJS</span>.
-            Estou cursando Análise e Desenvolvimento de
-            Sistemas na Faculdade Estácio, atualmente no terceiro semestre e sócio do DevClub.
-          </S.ParagraphAbout>
+          <S.ContainerProjects className='d-300'>
 
-        </S.ArticleAbout>
-      </S.About>
+            <S.CardProject>
+              <img src={require('../../Assets/clock.png')} alt="" />
+
+              <h4>Relógio</h4>
+
+              <p>O projeto consiste em um relógio digital com 3 funções, sendo elas: Relógio, Cronômetro e Temporizador.</p>
+
+              <div className='btns-project'>
+                <a className='view-live' href='https://clock-123.netlify.app/'>View Live</a>
+                <a className='github-repo' href='https://github.com/devMatheus20/Clock'>GitHub Repo</a>
+              </div>
+            </S.CardProject>
+
+            <S.CardProject>
+              <img src={require('../../Assets/prime-filmes.png')} alt="" />
+
+              <h4>Filmaria</h4>
+
+              <p>Um site que apresenta alguns filmes através do " consumo " de uma API.</p>
+
+              <div className='btns-project'>
+                <a className='view-live' href='https://prime-filmes.netlify.app/'>View Live</a>
+                <a className='github-repo' href='https://github.com/devMatheus20/Filmaria'>GitHub Repo</a>
+              </div>
+            </S.CardProject>
+
+            <S.CardProject>
+              <img src={require('../../Assets/convert.png')} alt="" />
+
+              <h4>Conversor</h4>
+
+              <p>Conversor de moedas que converte de Real para diferentes moedas.</p>
+
+              <div className='btns-project'>
+                <a className='view-live' href='https://devmatheus20.github.io/currency-converter/'>View Live</a>
+                <a className='github-repo' href='https://github.com/devMatheus20/currency-converter'>GitHub Repo</a>
+              </div>
+            </S.CardProject>
+
+            <S.CardProject>
+              <img src={require('../../Assets/europay.png')} alt="" />
+
+              <h4>Europay</h4>
+
+              <p>Uma Landing Page de uma empresa chamada Europay.</p>
+
+              <div className='btns-project'>
+                <a className='view-live' href='https://devmatheus20.github.io/europay-page/'>View Live</a>
+                <a className='github-repo' href='https://github.com/devMatheus20/europay-page'>GitHub Repo</a>
+              </div>
+            </S.CardProject>
+
+            <S.CardProject isBoolean={boolean}>
+              <img src={require('../../Assets/fortune-cookie.png')} alt="" />
+
+              <h4>Biscoito da Sorte</h4>
+
+              <p>Projeto feito com objetivo de praticar as tecnologias abordadas.</p>
+
+              <div className='btns-project'>
+                <a className='view-live' href='https://fortune-cookiee.netlify.app'>View Live</a>
+                <a className='github-repo' href='https://github.com/devMatheus20/fortune-cookie'>GitHub Repo</a>
+              </div>
+            </S.CardProject>
+
+            <S.CardProject isBoolean={boolean}>
+              <img src={require('../../Assets/stopwatch.png')} alt="" />
+
+              <h4>Cronômetro</h4>
+
+              <p>Projeto feito com objetivo de praticar as tecnologias abordadas.</p>
+
+              <div className='btns-project'>
+                <a className='view-live' href='https://stopwattch.netlify.app/'>View Live</a>
+                <a className='github-repo' href='https://github.com/devMatheus20/Stopwatch'>GitHub Repo</a>
+              </div>
+            </S.CardProject>
+
+            <S.CardProject isBoolean={boolean}>
+              <img src={require('../../Assets/netflix.png')} alt="" />
+
+              <h4>Netflix</h4>
+
+              <p>Projeto feito com objetivo de praticar as tecnologias abordadas.</p>
+
+              <div className='btns-project'>
+                <a className='view-live' href='https://devmatheus20.github.io/netflix-clone/'>View Live</a>
+                <a className='github-repo' href='https://github.com/devMatheus20/netflix-clone'>GitHub Repo</a>
+              </div>
+            </S.CardProject>
+
+            <S.CardProject isBoolean={boolean}>
+              <img src={require('../../Assets/brand.png')} alt="" />
+
+              <h4>Brand</h4>
+
+              <p>Projeto feito com objetivo de praticar as tecnologias abordadas.</p>
+
+              <div className='btns-project'>
+                <a className='view-live' href='https://devmatheus20.github.io/brand-page/'>View Live</a>
+                <a className='github-repo' href='https://github.com/devMatheus20/brand-page'>GitHub Repo</a>
+              </div>
+            </S.CardProject>
+
+          </S.ContainerProjects>
+
+          <button className='show-more d-200' onClick={showMore} >{textButton}</button>
+
+        </S.Projects>
 
 
-      <S.Projects id='projects'>
+        <S.Skills id='skills'>
 
-        <S.TitleProjects className='d-200'>
-          Projetos
-          <Point />
-        </S.TitleProjects>
+          <S.ArticleSkills>
 
-        <S.ContainerProjects className='d-300'>
+            <S.TitleSkills className='d-200'>
+              Conhecimentos
+              <Point />
+            </S.TitleSkills>
 
-          <S.CardProject>
-            <img src={require('../../Assets/clock.png')} alt="" />
+            <div className='info-card'>
+              <S.CardName>{nameCardSkills}</S.CardName>
 
-            <h4>Relógio</h4>
-
-            <p>O projeto consiste em um relógio digital com 3 funções, sendo elas: Relógio, Cronômetro e Temporizador.</p>
-
-            <div className='btns-project'>
-              <a className='view-live' href='https://clock-123.netlify.app/'>View Live</a>
-              <a className='github-repo' href='https://github.com/devMatheus20/Clock'>GitHub Repo</a>
+              <S.InfoSkills className='d-300'>{textCardSkills}</S.InfoSkills>
             </div>
-          </S.CardProject>
 
-          <S.CardProject>
-            <img src={require('../../Assets/prime-filmes.png')} alt="" />
+          </S.ArticleSkills>
 
-            <h4>Filmaria</h4>
+          <S.GridSkills className='d-400'>
 
-            <p>Um site que apresenta alguns filmes através do " consumo " de uma API.</p>
+            <S.CardSkill onMouseOver={() => changeDescription('html')} onMouseOut={clearDescription}>
+              <IconContext.Provider value={{ className: "card-icon" }}>
+                <AiFillHtml5 />
+              </IconContext.Provider>
+            </S.CardSkill>
 
-            <div className='btns-project'>
-              <a className='view-live' href='https://prime-filmes.netlify.app/'>View Live</a>
-              <a className='github-repo' href='https://github.com/devMatheus20/Filmaria'>GitHub Repo</a>
-            </div>
-          </S.CardProject>
+            <S.CardSkill onMouseOver={() => changeDescription('css')} onMouseOut={clearDescription}>
+              <IconContext.Provider value={{ className: "card-icon" }}>
+                <IoLogoCss3 />
+              </IconContext.Provider>
+            </S.CardSkill>
 
-          <S.CardProject>
-            <img src={require('../../Assets/convert.png')} alt="" />
+            <S.CardSkill onMouseOver={() => changeDescription('js')} onMouseOut={clearDescription}>
+              <IconContext.Provider value={{ className: "card-icon-2" }}>
+                <SiJavascript />
+              </IconContext.Provider>
+            </S.CardSkill>
 
-            <h4>Conversor</h4>
+            <S.CardSkill onMouseOver={() => changeDescription('git')} onMouseOut={clearDescription}>
+              <IconContext.Provider value={{ className: "card-icon" }}>
+                <FaGitAlt />
+              </IconContext.Provider>
+            </S.CardSkill>
 
-            <p>Conversor de moedas que converte de Real para diferentes moedas.</p>
+            <S.CardSkill onMouseOver={() => changeDescription('react')} onMouseOut={clearDescription}>
+              <IconContext.Provider value={{ className: "card-icon" }}>
+                <FaReact />
+              </IconContext.Provider>
+            </S.CardSkill>
 
-            <div className='btns-project'>
-              <a className='view-live' href='https://devmatheus20.github.io/currency-converter/'>View Live</a>
-              <a className='github-repo' href='https://github.com/devMatheus20/currency-converter'>GitHub Repo</a>
-            </div>
-          </S.CardProject>
+            <S.CardSkill onMouseOver={() => changeDescription('styled')} onMouseOut={clearDescription}>
+              <IconContext.Provider value={{ className: "card-icon" }}>
+                <SiStyledcomponents />
+              </IconContext.Provider>
+            </S.CardSkill>
 
-          <S.CardProject>
-            <img src={require('../../Assets/europay.png')} alt="" />
+            <S.CardSkill onMouseOver={() => changeDescription('responsivo')} onMouseOut={clearDescription}>
+              <img src={require('../../Assets/responsivo.png')} alt="Icone de Responsividade" />
+            </S.CardSkill>
 
-            <h4>Europay</h4>
+            <S.CardSkill onMouseOver={() => changeDescription('acessibilidade')} onMouseOut={clearDescription}>
+              <img src={require('../../Assets/acessibilidade.png')} alt="Icone de Acessibilidade" />
+            </S.CardSkill>
 
-            <p>Uma Landing Page de uma empresa chamada Europay.</p>
-
-            <div className='btns-project'>
-              <a className='view-live' href='https://devmatheus20.github.io/europay-page/'>View Live</a>
-              <a className='github-repo' href='https://github.com/devMatheus20/europay-page'>GitHub Repo</a>
-            </div>
-          </S.CardProject>
-
-          <S.CardProject isBoolean={boolean}>
-            <img src={require('../../Assets/fortune-cookie.png')} alt="" />
-
-            <h4>Biscoito da Sorte</h4>
-
-            <p>Projeto feito com objetivo de praticar as tecnologias abordadas.</p>
-
-            <div className='btns-project'>
-              <a className='view-live' href='https://fortune-cookiee.netlify.app'>View Live</a>
-              <a className='github-repo' href='https://github.com/devMatheus20/fortune-cookie'>GitHub Repo</a>
-            </div>
-          </S.CardProject>
-
-          <S.CardProject isBoolean={boolean}>
-            <img src={require('../../Assets/stopwatch.png')} alt="" />
-
-            <h4>Cronômetro</h4>
-
-            <p>Projeto feito com objetivo de praticar as tecnologias abordadas.</p>
-
-            <div className='btns-project'>
-              <a className='view-live' href='https://stopwattch.netlify.app/'>View Live</a>
-              <a className='github-repo' href='https://github.com/devMatheus20/Stopwatch'>GitHub Repo</a>
-            </div>
-          </S.CardProject>
-
-          <S.CardProject isBoolean={boolean}>
-            <img src={require('../../Assets/netflix.png')} alt="" />
-
-            <h4>Netflix</h4>
-
-            <p>Projeto feito com objetivo de praticar as tecnologias abordadas.</p>
-
-            <div className='btns-project'>
-              <a className='view-live' href='https://devmatheus20.github.io/netflix-clone/'>View Live</a>
-              <a className='github-repo' href='https://github.com/devMatheus20/netflix-clone'>GitHub Repo</a>
-            </div>
-          </S.CardProject>
-
-          <S.CardProject isBoolean={boolean}>
-            <img src={require('../../Assets/brand.png')} alt="" />
-
-            <h4>Brand</h4>
-
-            <p>Projeto feito com objetivo de praticar as tecnologias abordadas.</p>
-
-            <div className='btns-project'>
-              <a className='view-live' href='https://devmatheus20.github.io/brand-page/'>View Live</a>
-              <a className='github-repo' href='https://github.com/devMatheus20/brand-page'>GitHub Repo</a>
-            </div>
-          </S.CardProject>
-
-        </S.ContainerProjects>
-
-        <button className='show-more d-200' onClick={showMore} >{textButton}</button>
-
-      </S.Projects>
+          </S.GridSkills>
+        </S.Skills>
 
 
-      <S.Skills id='skills'>
+        <S.Contact id='contact'>
 
-        <S.ArticleSkills>
+          <S.ArticleContact>
 
-          <S.TitleSkills className='d-200'>
-            Conhecimentos
-            <Point />
-          </S.TitleSkills>
+            <S.TitleContact className='d-200'>
+              Contato
+              <Point />
+            </S.TitleContact>
 
-          <div className='info-card'>
-            <S.CardName>{nameCardSkills}</S.CardName>
+            <S.SocialLinks className='d-400'>
+              <a href="https://www.linkedin.com/in/matheus-santos-souza/">
+                <img src={LinkedIn} alt="LinkedIn" />
+              </a>
 
-            <S.InfoSkills className='d-300'>{textCardSkills}</S.InfoSkills>
-          </div>
+              <a href="https://github.com/devMatheus20">
+                <img src={GitHub} alt="GitHub" />
+              </a>
 
-        </S.ArticleSkills>
+              <a href="https://discord.gg/gcDrJNpwzz">
+                <img src={Discord} alt="Discord" />
 
-        <S.GridSkills className='d-400'>
+              </a>
 
-          <S.CardSkill onMouseOver={() => changeDescription('html')} onMouseOut={clearDescription}>
-            <IconContext.Provider value={{ className: "card-icon" }}>
-              <AiFillHtml5 />
-            </IconContext.Provider>
-          </S.CardSkill>
+              <a href="https://contate.me/mtsantos">
+                <img src={WhatsApp} alt="WhatsApp" />
+              </a>
+            </S.SocialLinks>
 
-          <S.CardSkill onMouseOver={() => changeDescription('css')} onMouseOut={clearDescription}>
-            <IconContext.Provider value={{ className: "card-icon" }}>
-              <IoLogoCss3 />
-            </IconContext.Provider>
-          </S.CardSkill>
+          </S.ArticleContact>
 
-          <S.CardSkill onMouseOver={() => changeDescription('js')} onMouseOut={clearDescription}>
-            <IconContext.Provider value={{ className: "card-icon-2" }}>
-              <SiJavascript />
-            </IconContext.Provider>
-          </S.CardSkill>
+          <S.Form className="d-400" action="https://formsubmit.co/matheussantosdev20@gmail.com" method="POST">
+            <label>
+              <input type="text" name="Nome" placeholder="Seu nome" required autoComplete="true" />
+            </label>
 
-          <S.CardSkill onMouseOver={() => changeDescription('git')} onMouseOut={clearDescription}>
-            <IconContext.Provider value={{ className: "card-icon" }}>
-              <FaGitAlt />
-            </IconContext.Provider>
-          </S.CardSkill>
+            <label>
+              <input type="email" name="Email" placeholder="seuemail@email.com" required autoComplete="true" />
+            </label>
 
-          <S.CardSkill onMouseOver={() => changeDescription('react')} onMouseOut={clearDescription}>
-            <IconContext.Provider value={{ className: "card-icon" }}>
-              <FaReact />
-            </IconContext.Provider>
-          </S.CardSkill>
+            <label>
+              <textarea name="Mensagem" placeholder="Deixe sua mensagem"></textarea>
+            </label>
 
-          <S.CardSkill onMouseOver={() => changeDescription('styled')} onMouseOut={clearDescription}>
-            <IconContext.Provider value={{ className: "card-icon" }}>
-              <SiStyledcomponents />
-            </IconContext.Provider>
-          </S.CardSkill>
+            <input type="hidden" name="_captcha" value="false" />
 
-          <S.CardSkill onMouseOver={() => changeDescription('responsivo')} onMouseOut={clearDescription}>
-            <img src={require('../../Assets/responsivo.png')} alt="Icone de Responsividade" />
-          </S.CardSkill>
+            <button type="submit">
+              Enviar
+            </button>
+          </S.Form>
+        </S.Contact>
 
-          <S.CardSkill onMouseOver={() => changeDescription('acessibilidade')} onMouseOut={clearDescription}>
-            <img src={require('../../Assets/acessibilidade.png')} alt="Icone de Acessibilidade" />
-          </S.CardSkill>
-
-        </S.GridSkills>
-      </S.Skills>
-
-
-      <S.Contact id='contact'>
-
-        <S.ArticleContact>
-
-          <S.TitleContact className='d-200'>
-            Contato
-            <Point />
-          </S.TitleContact>
-
-          <S.SocialLinks className='d-400'>
-            <a href="https://www.linkedin.com/in/matheus-santos-souza/">
-              <img src={LinkedIn} alt="LinkedIn" />
-            </a>
-
-            <a href="https://github.com/devMatheus20">
-              <img src={GitHub} alt="GitHub" />
-            </a>
-
-            <a href="https://discord.gg/gcDrJNpwzz">
-              <img src={Discord} alt="Discord" />
-
-            </a>
-
-            <a href="https://contate.me/mtsantos">
-              <img src={WhatsApp} alt="WhatsApp" />
-            </a>
-          </S.SocialLinks>
-
-        </S.ArticleContact>
-
-        <S.Form className="d-400" action="https://formsubmit.co/matheussantosdev20@gmail.com" method="POST">
-          <label>
-            <input type="text" name="Nome" placeholder="Seu nome" required autoComplete="true" />
-          </label>
-
-          <label>
-            <input type="email" name="Email" placeholder="seuemail@email.com" required autoComplete="true" />
-          </label>
-
-          <label>
-            <textarea name="Mensagem" placeholder="Deixe sua mensagem"></textarea>
-          </label>
-
-          <input type="hidden" name="_captcha" value="false" />
-
-          <button type="submit">
-            Enviar
-          </button>
-        </S.Form>
-      </S.Contact>
+      </main>
 
       <S.Footer>
         <p>© 2022 Matheus Santos - Front-End Developer</p>
