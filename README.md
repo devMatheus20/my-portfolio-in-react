@@ -2,6 +2,7 @@
 
 <img id="top" width="700px" src="src/Assets/gif.gif" alt="GIF do Projeto" />
 
+> Meu Portfólio onde faço uma breve apresentação sobre mim, meus conhecimentos e meus projetos.
 
 Confira a aplicação: https://www.mtsantos.com.br
 
