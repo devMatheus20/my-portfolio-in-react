@@ -18,9 +18,6 @@ to  {transform: translateY(-15px);}
 // HEADER STYLES ----------------------<
 
 export const Header = styled.header`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     position: fixed;
     top: 0;
     padding: 15px 80px;
@@ -29,11 +26,6 @@ export const Header = styled.header`
     opacity: 0.97;
     z-index: 99;
     background-color: #171717;
-
-    @media(max-width:950px) {
-        padding: 15px 20px;
-        opacity: 0.99;
-    }
 
     .listFade {
         display: flex;
@@ -47,6 +39,20 @@ export const Header = styled.header`
         text-align: center;
         background-color: #171717;
         opacity: 0.97;
+    }
+
+    .grid-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+
+        @media(max-width:950px) {
+            padding: 15px 20px;
+            opacity: 0.99;
+        }
     }
 
 `
@@ -147,26 +153,33 @@ export const Menu = styled.div`
 // HOME STYLES ----------------------<
 
 export const Home = styled.section`
-    display: flex;
     margin-top: 100px;
-    padding: 70px 40px;
+    padding: 120px 40px;
 
-    @media(max-width:1200px) {
-        flex-direction: column-reverse;
-        align-items: center;
-        padding: 40px 20px 200px 20px;
-        text-align: center;
-    }
-    
-    @media(max-width:950px) {
-        padding: 50px 20px 130px 20px;
+    .grid {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+
+        @media(max-width:1200px) {
+            flex-direction: column-reverse;
+            align-items: center;
+            padding: 40px 20px 200px 20px;
+            text-align: center;
+        }
+
+        @media(max-width:950px) {
+            padding: 50px 20px 130px 20px;
+        }
     }
 `
 
 export const ArticleHome = styled.article`
     width: 60%;
     min-width: 501px;
-    margin-top: 50px;
+
     margin-left: 2%;
 
     @media(max-width:1200px) {
@@ -270,7 +283,7 @@ export const ImageHome = styled.img`
     position: relative;
     bottom: 60px;
     right: 40px;
-    max-width: 38%;
+    max-width: 36%;
     animation: ${moveUndraw} 1.7s infinite alternate-reverse linear;
 
     @media(max-width: 1200px) {
@@ -292,15 +305,23 @@ export const ImageHome = styled.img`
 // ABOUT STYLES ----------------------<
 
 export const About = styled.section`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 70px 20px;
+    padding: 80px 20px 90px 0;
     background-color: #191919;
 
-    @media(max-width:1200px) {
+    
+
+    .grid {
+        display: flex;
         align-items: center;
-        padding: 80px 20px;
+        justify-content: center;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+
+        @media(max-width:1200px) {
+            align-items: center;
+            padding: 80px 20px;
+        }
     }
 `
 
@@ -376,6 +397,14 @@ export const Projects = styled.section`
             color: #000;
         }
     }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
 `
 
 export const TitleProjects = styled.h2`
@@ -404,7 +433,7 @@ export const ContainerProjects = styled.article`
 export const CardProject = styled.div`
     position: relative;
     background-color: #222222;
-    display: ${({isBoolean}) => isBoolean ? 'none' : 'flex'};
+    display: ${({ isBoolean }) => isBoolean ? 'none' : 'flex'};
     flex-direction: column;
     padding: 20px 15px;
     width: 310px;
@@ -501,18 +530,23 @@ export const CardProject = styled.div`
 
 
 export const Skills = styled.section`
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 100px 0px;
-    gap: 130px;
     background-color: #191919;
 
-    @media(max-width:1300px) {
-        flex-direction: column;
-        gap: 0;
-        padding: 50px 20px 100px 20px;
-        text-align: center;
+    .grid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+
+        @media(max-width:1300px) {
+            flex-direction: column;
+            gap: 0;
+            padding: 50px 20px 100px 20px;
+            text-align: center;
+        }
     }
 `
 
@@ -605,22 +639,28 @@ export const CardSkill = styled.div`
 
 
 export const Contact = styled.section`
-    display: flex;
-    padding: 70px 70px 60px 70px;
-    gap: 23%;
+    padding: 70px 0 60px 0;
 
-    @media(max-width:1200px) {
-        flex-direction: column;
-        align-items: center;
-        padding: 50px 20px 30px 20px;
-        gap: 40px;
+    .grid {
+        display: flex;
+        justify-content: center;
+        gap: 250px;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+
+        @media(max-width:1200px) {
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px 30px 20px;
+            gap: 40px;
+        }
     }
 `
 
 export const ArticleContact = styled.article`
     display: flex;
     flex-direction: column;
-    margin-left: 10%;
 
     @media(max-width:1200px) {
         text-align: center;
@@ -731,19 +771,23 @@ export const Form = styled.form`
 // Footer STYLES ----------------------<
 
 
-export const Footer = styled.footer`
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    margin: 0 auto;
-    padding: 30px 0;
-    border-top: 1px solid rgba(114, 114, 126, 0.2);
-    font-size: 1.5rem;
-    color: #858586;
+export const Footer = styled.footer`    
 
-    @media(max-width: 550px) {
-        justify-content: space-between;
-        font-size: 1.2rem;
+    .grid {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin: 0 auto;
+        padding: 30px 0;
+        border-top: 1px solid rgba(114, 114, 126, 0.2);
+        font-size: 1.5rem;
+        color: #858586;
+        max-width: 1300px;
+
+        @media(max-width: 550px) {
+            justify-content: space-between;
+            font-size: 1.2rem;
+        }
     }
 `
 
